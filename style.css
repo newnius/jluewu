@@ -1,0 +1,144 @@
+#single-good{
+  min-height: 200px;	
+}
+
+
+#goods-list-header{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#pagination{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.font-lg{
+  font-size: 18px;
+}
+
+.item{
+  min-height: 250px;
+}
+
+body{
+  background: #32b16c;
+}
+
+#nav-header{
+  margin-bottom: 0;
+}
+
+#search-zone{
+  width: 100%;
+}
+
+
+#login-model-body{
+  top: 150px;
+}
+
+.big-icon{
+  font-size: 50px;
+}
+
+.img-block{
+  border: 1px solid #f5f5f5;
+  float: left;
+}
+
+
+.img-preview{
+  height: 200px;
+}
+
+.hidden{
+ opacity: 0;
+}
+
+.half-hidden{
+ background: rgba(255,255,255,0.5);
+}
+
+.form-lostpass{
+  max-width:320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#lostpass-error{
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top:25px;
+  border-left: 4px solid #dd3d36;
+  display: none;
+  background: #fff;
+  padding:12px;
+}
+
+.form-resetpwd{
+  max-width:320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#resetpwd-error{
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top:25px;
+  border-left: 4px solid #dd3d36;
+  display: none;
+  background: #fff;
+  padding:12px;
+}
+
+.form-register{
+  max-width:320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#reg-error{
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top:25px;
+  border-left: 4px solid #dd3d36;
+  display: none;
+  background: #fff;
+  padding:12px;
+}
+
+.center{
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+
+.fixed-pos{
+  position: fixed;
+}
+
+#category-modal-body{
+  top: 150px;
+}
+
+.icon-block{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 40px;
+  
+}
+
+.icon-font{
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.icon-icon{
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
