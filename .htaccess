@@ -1,0 +1,77 @@
+RewriteEngine on 
+RewriteCond %{HTTP_HOST}: ^jluewu.com
+RewriteRule ^(.*)$ http://www.jluewu.com/$1 [L,R=301]
+
+Order Allow,Deny
+Deny from 222.186.0.0/16
+Allow from all
+
+#RewriteCond %{HTTP_HOST}: ^img.jluewu.com
+#RewriteRule ^([0-9]+\.[^/]{1,5})$ /goods_list.php?owner=$1
+
+RewriteRule ^buy$ /goods_publish.php?buy
+RewriteRule ^sell$ /goods_publish.php?sell
+RewriteRule ^donate$ /goods_publish.php?donate
+
+RewriteRule ^register$ /register.php
+RewriteRule ^lostpass$ /lostpass.php
+RewriteRule ^feedback$ /feedback.php
+RewriteRule ^help$ /help.php
+
+RewriteRule ^detail/([0-9]+).html$ /goods_detail.php?id=$1
+
+RewriteRule ^search/([^/]+)$ /goods_list.php?name=$1
+RewriteRule ^search/([^/]+)/([0-9]+)$ /goods_list.php?name=$1&page=$2
+RewriteRule ^search/([^/]+)/latest$ /goods_list.php?name=$1
+RewriteRule ^search/([^/]+)/latest/([0-9]+)$ /goods_list.php?name=$1&page=$2
+RewriteRule ^search/([^/]+)/cheapest$ /goods_list.php?name=$1&by=price&desc=f
+RewriteRule ^search/([^/]+)/cheapest/([0-9]+)$ /goods_list.php?name=$1&by=price&desc=f&page=$2
+RewriteRule ^search/([^/]+)/dearest$ /goods_list.php?name=$1&by=price
+RewriteRule ^search/([^/]+)/dearest/([0-9]+)$ /goods_list.php?name=$1&by=price&page=$2
+RewriteRule ^search/([^/]+)/hottest$ /goods_list.php?name=$1&by=hot
+RewriteRule ^search/([^/]+)/hottest/([0-9]+)$ /goods_list.php?name=$1&by=hot&page=$2
+
+RewriteRule ^category/([0-9]+)$ /goods_list.php?c=$1
+RewriteRule ^category/([0-9]+)/([0-9]+)$ /goods_list.php?c=$1&page=$2
+RewriteRule ^category/([0-9]+)/latest$ /goods_list.php?c=$1
+RewriteRule ^category/([0-9]+)/latest/([0-9]+)$ /goods_list.php?c=$1&page=$2
+RewriteRule ^category/([0-9]+)/cheapest$ /goods_list.php?c=$1&by=price&desc=f
+RewriteRule ^category/([0-9]+)/cheapest/([0-9]+)$ /goods_list.php?c=$1&by=price&desc=f&page=$2
+RewriteRule ^category/([0-9]+)/dearest$ /goods_list.php?c=$1&by=price
+RewriteRule ^category/([0-9]+)/dearest/([0-9]+)$ /goods_list.php?c=$1&by=price&page=$2
+RewriteRule ^category/([0-9]+)/hottest$ /goods_list.php?c=$1&by=hot
+RewriteRule ^category/([0-9]+)/hottest/([0-9]+)$ /goods_list.php?c=$1&by=hot&page=$2
+
+RewriteRule ^area/([0-9]+)$ /goods_list.php?area=$1
+RewriteRule ^area/([0-9]+)/([0-9]+)$ /goods_list.php?area=$1&page=$2
+RewriteRule ^area/([0-9]+)/latest$ /goods_list.php?area=$1
+RewriteRule ^area/([0-9]+)/latest/([0-9]+)$ /goods_list.php?area=$1&page=$2
+RewriteRule ^area/([0-9]+)/cheapest$ /goods_list.php?area=$1&by=price&desc=f
+RewriteRule ^area/([0-9]+)/cheapest/([0-9]+)$ /goods_list.php?area=$1&by=price&desc=f&page=$2
+RewriteRule ^area/([0-9]+)/dearest$ /goods_list.php?area=$1&by=price
+RewriteRule ^area/([0-9]+)/dearest/([0-9]+)$ /goods_list.php?area=$1&by=price&page=$2
+RewriteRule ^area/([0-9]+)/hottest$ /goods_list.php?area=$1&by=hot
+RewriteRule ^area/([0-9]+)/hottest/([0-9]+)$ /goods_list.php?area=$1&by=hot&page=$2
+
+RewriteRule ^type/(.)$ /goods_list.php?type=$1
+RewriteRule ^type/(.)/([0-9]+)$ /goods_list.php?type=$1&page=$2
+RewriteRule ^type/(.)/latest$ /goods_list.php?type=$1
+RewriteRule ^type/(.)/latest/([0-9]+)$ /goods_list.php?type=$1&page=$2
+RewriteRule ^type/(.)/cheapest$ /goods_list.php?type=$1&by=price&desc=f
+RewriteRule ^type/(.)/cheapest/([0-9]+)$ /goods_list.php?type=$1&by=price&desc=f&page=$2
+RewriteRule ^type/(.)/dearest$ /goods_list.php?type=$1&by=price
+RewriteRule ^type/(.)/dearest/([0-9]+)$ /goods_list.php?type=$1&by=price&page=$2
+RewriteRule ^type/(.)/hottest$ /goods_list.php?type=$1&by=hot
+RewriteRule ^type/(.)/hottest/([0-9]+)$ /goods_list.php?type=$1&by=hot&page=$2
+
+RewriteRule ^owner/([^/]+)$ /goods_list.php?owner=$1
+RewriteRule ^owner/([^/]+)/([0-9]+)$ /goods_list.php?owner=$1&page=$2
+RewriteRule ^owner/([^/]+)/latest$ /goods_list.php?owner=$1
+RewriteRule ^owner/([^/]+)/latest/([0-9]+)$ /goods_list.php?owner=$1&page=$2
+RewriteRule ^owner/([^/]+)/cheapest$ /goods_list.php?owner=$1&by=price&desc=f
+RewriteRule ^owner/([^/]+)/cheapest/([0-9]+)$ /goods_list.php?owner=$1&by=price&desc=f&page=$2
+RewriteRule ^owner/([^/]+)/dearest$ /goods_list.php?owner=$1&by=price
+RewriteRule ^owner/([^/]+)/dearest/([0-9]+)$ /goods_list.php?owner=$1&by=price&page=$2
+RewriteRule ^owner/([^/]+)/hottest$ /goods_list.php?owner=$1&by=hot
+RewriteRule ^owner/([^/]+)/hottest/([0-9]+)$ /goods_list.php?owner=$1&by=hot&page=$2
+
