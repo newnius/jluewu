@@ -219,19 +219,19 @@
                   <div class="item col-md-3 col-sm-4 col-xs-12">
                     <div class="panel panel-default">
                       <div class="panel-body">
-                        <a href="goods_detail.php?id=<?php echo $good['pid'] ?>">
+                        <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" target="_blank">
 	                  <img src="<?php echo UPLOADED_FILE_FOLDER.'m_'.$images[0] ?>" alt="宝贝" class="img-responsive" />
 	                </a>
                         <span class="text-danger">¥<?php echo $good['price']/100 ?></span>
                         <a href="goods_list.php?campus=<?php echo $good['campus'] ?>" class="label label-primary"><?php echo $area_array[$good['campus']]; ?></a>
-                        <h5><a href="goods_detail.php?id=<?php echo $good['pid'] ?>"><?php echo $good['name'] ?></a></h5>
+                        <h5><a href="goods_detail.php?id=<?php echo $good['pid'] ?>" target="_blank"><?php echo $good['name'] ?></a></h5>
                       </div>
                     </div>
                   </div>
                   <?php
                   }
                 }else{ ?>
-                  <div>oops,什么也没有找到，欢迎发布此类物品</div>
+                  <div>什么也没有找到，欢迎发布此类物品</div>
                 <?php	} ?>
 		</div>
 

@@ -181,7 +181,7 @@
 	      </div>
 
               <div class="row hidden-sm hidden-xs panel panel-default">
-	        <div class="panel-heading">猜你不喜欢</div>
+	        <div class="panel-heading">猜你喜欢</div>
 	        <div class="panel-body">
           <?php
 		        foreach($goods as $good){
