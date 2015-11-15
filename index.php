@@ -121,7 +121,7 @@
       ?>
         <div class="col-md-2 col-sm-3 col-xs-6">
           <div>
-            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail">
+            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail" target="_blank">
               <img src="<?php echo UPLOADED_FILE_FOLDER.'s_'.$images[0] ?>" alt="宝贝" class="img-responsive" />
             </a>
           </div>
@@ -144,7 +144,7 @@
       ?>
         <div class="col-md-2 col-sm-3 col-xs-6">
           <div>
-            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail">
+            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail" target="_blank">
               <img src="<?php echo UPLOADED_FILE_FOLDER.'s_'.$images[0] ?>" alt="宝贝" class="img-responsive" />
             </a>
           </div>
@@ -167,7 +167,7 @@
       ?>
         <div class="col-md-2 col-sm-3 col-xs-6">
           <div>
-            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail">
+            <a href="goods_detail.php?id=<?php echo $good['pid'] ?>" class="thumbnail" target="_blank">
               <img src="<?php echo UPLOADED_FILE_FOLDER.'s_'.$images[0] ?>" alt="宝贝" class="img-responsive" />
             </a>
           </div>
