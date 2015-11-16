@@ -143,7 +143,7 @@
 	          <h3>估价：<span class="text-danger">￥<?php echo $price ?></span></h3>
 	          <h4>新&nbsp;&nbsp;&nbsp;旧：<?php echo $depreciation; ?></h4>
 	          <h4>标&nbsp;&nbsp;&nbsp;签：
-	            <a href="goods_list.php?c=<?php echo $category ?>" class="label label-primary"><?php echo $category_array[$category]; ?></a>
+		  <a href="goods_list.php?c=<?php echo $category ?>" class="label label-primary"><?php echo $category_array[$category-1]; ?></a>	<?php //注意：此处数组索引有一个错位 ?>
 	            <a href="goods_list.php?campus=<?php echo $campus ?>" class="label label-primary"><?php echo $area_array[$campus]; ?></a>
 	            <a href="goods_list.php?type=<?php echo $type ?>" class="label label-primary"><?php echo $type_array->$type; ?></a>
 	          </h4>
