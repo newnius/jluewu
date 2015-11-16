@@ -47,7 +47,7 @@
   $area_array = json_encode($area_array);
   define('AREA_LIST', $area_array);
 
-	$category_array = array('代步','数码','电器','文体','服饰','书刊','鞋履','装饰','虚拟','日用','食品','其他');
+	$category_array = array('placeholder','代步','数码','电器','文体','服饰','书刊','鞋履','装饰','虚拟','日用','食品','其他');	//注意：此处数组第一个元素，即category_array[0]='placeholder',没有实际意义，只是因为表单是从1开始计数，而数组是从0开始，此处0号元素用于错位
   $category_array = json_encode($category_array);
   define('CATEGORY_LIST', $category_array);
 
