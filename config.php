@@ -41,11 +41,7 @@
   define('IMG_ALLOWED_LIST', $imgtype);
 	define('MAX_IMG_ALLOWED',5);//单个商品最多允许上传的照片
 
-<<<<<<< HEAD
 	define('IMG_CDN', 'http://img.jluewu.com/images');
-=======
-	define('IMG_CDN', 'http://localhost/images');
->>>>>>> e7b902803338ad9b169afd52abf6d9bcf62d213f
 
 	$area_array = array('南区','南岭','南湖','和平','朝阳','新民');
   $area_array = json_encode($area_array);
