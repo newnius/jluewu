@@ -1,4 +1,5 @@
-CREATE TABLE `ewu_account` (
+DROP TABLE IF EXISTS `ewu_account`;
+CREATE TABLE `ewu_account`(
   `username` varchar(16) NOT NULL,
    PRIMARY KEY (`username`),
   `pwd` char(64) NOT NULL,
@@ -33,6 +34,7 @@ CREATE TABLE `ewu_account` (
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 /*
+DROP TABLE IF EXISTS `ewu_session`;
 CREATE TABLE `ewu_session`(
   `username` varchar(16) NOT NULL,
    PRIMARY KEY (`username`),
@@ -43,7 +45,8 @@ CREATE TABLE `ewu_session`(
 )ENGINE = MEMORY DEFAULT CHARSET = utf8;
 */
 
-CREATE TABLE `ewu_product` (
+DROP TABLE IF EXISTS `ewu_product`;
+CREATE TABLE `ewu_product`(
   `pid` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`pid`),
   `name` varchar(16) NOT NULL,
@@ -69,6 +72,7 @@ CREATE TABLE `ewu_product` (
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
+DROP TABLE IF EXISTS `ewu_label_has`;
 CREATE TABLE `ewu_label_has`(
   `id` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`id`),
@@ -80,6 +84,7 @@ CREATE TABLE `ewu_label_has`(
 )ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
+DROP TABLE IF EXISTS `ewu_keyword_has`;
 CREATE TABLE `ewu_keyword_has`(
   `id` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`id`),
@@ -91,7 +96,8 @@ CREATE TABLE `ewu_keyword_has`(
 )ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE `ewu_comment` (
+DROP TABLE IF EXISTS `ewu_comment`;
+CREATE TABLE `ewu_comment`(
   `cid` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`cid`),
   `pid` int NOT NULL,
@@ -104,7 +110,8 @@ CREATE TABLE `ewu_comment` (
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE `ewu_msg` (
+DROP TABLE IF EXISTS `ewu_msg`;
+CREATE TABLE `ewu_msg`(
   `mid` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`mid`),
   `to` varchar(16) NOT NULL,
@@ -118,33 +125,36 @@ CREATE TABLE `ewu_msg` (
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE `ewu_feedback` (
+DROP TABLE IF EXISTS `ewu_feedback`;
+CREATE TABLE `ewu_feedback`(
   `fid` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`fid`),
   `title` varchar(25) NOT NULL,
   `content` varchar(500) NOT NULL,
   `name` varchar(16),
   `contact` varchar(45),
-  `status` char(1) DEFAULT 'u',// unchecked, checked, show
+  `status` char(1) DEFAULT 'u',/* unchecked, checked, show */
   `response` varchar(200),
   `time` int,
   `ip` bigint
  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE `ewu_admin` (
+DROP TABLE IF EXISTS `ewu_admin`;
+CREATE TABLE `ewu_admin`(
   `username` varchar(16) NOT NULL,
    PRIMARY KEY (`username`),
   `pwd` char(64) NOT NULL,
   `salt` char(64) NOT NULL,
 
-  `role` char(8) NOT NULL DEFAULT 'viewer',// webmaster(wm), admin, user_manager(um), feedback_manager(fm), product_manager(pm), secure, viewer
+  `role` char(8) NOT NULL DEFAULT 'viewer',/* webmaster(wm), admin, user_manager(um), feedback_manager(fm), product_manager(pm), secure, viewer */
   `last_time` int,
   `last_ip` bigint
 
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
+DROP TABLE IF EXISTS `ewu_signin_log`;
 CREATE TABLE `ewu_signin_log`(
   `log_id` int AUTO_INCREMENT,
    PRIMARY KEY(`log_id`),
@@ -156,6 +166,7 @@ CREATE TABLE `ewu_signin_log`(
 )ENGINE = MyISAM DEFAULT CHARSET = utf8;
 
 
+DROP TABLE IF EXISTS `ewu_email_log`;
 CREATE TABLE `ewu_email_log`(
   `log_id` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY(`log_id`),
@@ -168,10 +179,11 @@ CREATE TABLE `ewu_email_log`(
 )ENGINE = MyISAM DEFAULT CHARSET = utf8;
 
 
+DROP TABLE IF EXISTS `ewu_mission_log`;
 CREATE TABLE `ewu_mission_log`(
   `log_id` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`log_id`),
-  `username` NOT NULL,
+  `username` varchar(16) NOT NULL,
    INDEX(`username`),
   `mission_id` int NOT NULL,
    INDEX(`mission_id`),
@@ -181,15 +193,15 @@ CREATE TABLE `ewu_mission_log`(
 )ENGINE = MyISAM DEFAULT CHARSET = utf8;
 
 
+DROP TABLE IF EXISTS `ewu_e_point_log`;
 CREATE TABLE `ewu_e_point_log`(
   `log_id` int NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (`log_id`),
-  `username` NOT NULL,
+  `username` varchar(16) NOT NULL,
    INDEX(`username`),
   `e_point` int NOT NULL,
   `usage` varchar(50),
-  `time` int,
-
+  `time` int
 )ENGINE = MyISAM DEFAULT CHARSET = utf8;
 
 
