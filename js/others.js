@@ -2,7 +2,7 @@ $(function(){
 
   $("#btn-feedback").click(
     function(e){
-      //e.preventDefault();
+      e.preventDefault();
       $("#btn-feedback").attr("disabled","disabled");
       $("#btn-feedback").html("提交中。。。");
       var title = $("#f-title").val();
