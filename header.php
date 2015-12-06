@@ -147,18 +147,11 @@
         <h5>宝贝分类</h5>
       </div>
       <div class="modal-body">
-      <a href="goods_list.php?c=1"><div class="icon-block" style="background:#ffa86e"><div><img class="icon-icon"  src="img/w1.png"><span class="icon-font">代步</span></div></div></a>
-      <a href="goods_list.php?c=2"><div class="icon-block" style="background:#f3c717"><div><img class="icon-icon"  src="img/w2.png"><span class="icon-font">数码</span></div></div></a>
-      <a href="goods_list.php?c=3"><div class="icon-block" style="background:#abdd15"><div><img class="icon-icon"  src="img/w3.png"><span class="icon-font">电器</span></div></div></a>
-      <a href="goods_list.php?c=4"><div class="icon-block" style="background:#61e261"><div><img class="icon-icon"  src="img/w4.png"><span class="icon-font">文体</span></div></div></a>
-      <a href="goods_list.php?c=5"><div class="icon-block" style="background:#61c2e2"><div><img class="icon-icon"  src="img/w5.png"><span class="icon-font">服饰</span></div></div></a>
-      <a href="goods_list.php?c=6"><div class="icon-block" style="background:#6197e2"><div><img class="icon-icon"  src="img/w6.png"><span class="icon-font">书刊</span></div></div></a>
-      <a href="goods_list.php?c=7"><div class="icon-block" style="background:#b761e2"><div><img class="icon-icon"  src="img/w7.png"><span class="icon-font">鞋履</span></div></div></a>
-      <a href="goods_list.php?c=8"><div class="icon-block" style="background:#e964b2"><div><img class="icon-icon"  src="img/w8.png"><span class="icon-font">装饰</span></div></div></a>
-      <a href="goods_list.php?c=9"><div class="icon-block" style="background:#ff6e6e"><div><img class="icon-icon"  src="img/w9.png"><span class="icon-font">虚拟</span></div></div></a>
-      <a href="goods_list.php?c=10"><div class="icon-block" style="background:#ff9999"><div><img class="icon-icon"  src="img/w10.png"><span class="icon-font">日用</span></div></div></a>
-      <a href="goods_list.php?c=11"><div class="icon-block" style="background:#ffa86e"><div><img class="icon-icon"  src="img/w11.png"><span class="icon-font">食品</span></div></div></a>
-      <a href="goods_list.php?c=12"><div class="icon-block" style="background:#f3c717"><div><img class="icon-icon"  src="img/w12.png"><span class="icon-font">其他</span></div></div></a>
+      <?php
+	 $colors=array("#ffa86e","#f3c717","#abdd15","#61e261","#61c2e2","#6197e2","#b761e2","#e964b2","#ff6e6e","#ff9999","#ffa86e","#f3c717");
+	 foreach($category_array as $i => $cate)
+		 printf('<a href="goods_list.php?c=%d"><div class="icon-block" style="background:%s"><div><img class="icon-icon"  src="img/w%d.png"><span class="icon-font">%s</span></div></div></a>',$i,$colors[$i],$i,$cate);
+      ?>
       </div>
 
 
