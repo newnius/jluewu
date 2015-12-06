@@ -78,13 +78,13 @@
 	        <!-- Carousel items -->
 	          <div class="carousel-inner" role="listbox">
 		    <div class="active item">
-                        <img src="http://img.jluewu.com/img/logo2.png" alt="picture">
+                        <img src="img/logo2.png" alt="picture">
                     </div>
 		    <div class="item">
-                        <img src="http://img.jluewu.com/img/logo3.png" alt="picture">
+                        <img src="img/logo3.png" alt="picture">
                     </div>
 		    <div class="item">
-                        <img src="http://img.jluewu.com/img/logo4.png" alt="picture">
+                        <img src="img/logo4.png" alt="picture">
                     </div>
 	          </div>
 	          <!-- Carousel nav -->
@@ -110,7 +110,7 @@
 	  </div>
 	</div>
       </div>
-
+<!--
       <div id="recommended" class="row panel panel-default">
         <div class="panel-heading">宝贝推荐</div>
       <?php
@@ -133,7 +133,8 @@
 	</div>
       <?php } ?>
       </div>
-
+-->
+<!--
       <div id="hottest" class="row panel panel-default hidden-xs">
         <div class="panel-heading">最热门宝贝</div>
       <?php
@@ -156,6 +157,7 @@
 	</div>
       <?php } ?>
       </div>
+-->
 
       <div id="latest" class="row panel panel-default">
         <div class="panel-heading">新品上架</div>

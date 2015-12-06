@@ -1,0 +1,570 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AREA_LIST	config.php	/^  define('AREA_LIST', $area_array);$/;"	d
+BIND_COOKIE_WITH_IP	config.php	/^  define('BIND_COOKIE_WITH_IP', false);$/;"	d
+BIND_SESSION_WITH_IP	config.php	/^  define('BIND_SESSION_WITH_IP', true);\/\/can not be false when BIND_COOKIE_WITH_IP is true;$/;"	d
+CATEGORY_LIST	config.php	/^  define('CATEGORY_LIST', $category_array);$/;"	d
+DB_HOST	config.php	/^	define("DB_HOST","localhost");$/;"	d
+DB_NAME	config.php	/^	define("DB_NAME","ewu");$/;"	d
+DB_PASSWORD	config.php	/^  define("DB_PASSWORD","123456");$/;"	d
+DB_PORT	config.php	/^	define("DB_PORT","3307");$/;"	d
+DB_USER	config.php	/^  define("DB_USER","ewuadmin");$/;"	d
+ENABLE_COOKIE	config.php	/^  define('ENABLE_COOKIE', true);$/;"	d
+ENABLE_EMAIL_ANTISPAM	config.php	/^  define('ENABLE_EMAIL_ANTISPAM', true);$/;"	d
+ENABLE_SECURE_MODULE	config.php	/^  define('ENABLE_SECURE_MODULE', false);\/\/ open$/;"	d
+FORCE_VERIFY	config.php	/^  define('FORCE_VERIFY', false);$/;"	d
+IMG_ALLOWED_LIST	config.php	/^  define('IMG_ALLOWED_LIST', $imgtype);$/;"	d
+IMG_CDN	config.php	/^	define('IMG_CDN', 'http:\/\/img.jluewu.com\/images');$/;"	d
+IN_EWU	config.php	/^	define('IN_EWU',true);$/;"	d
+LASTSIZEOFIMAGE	config.php	/^	define('LASTSIZEOFIMAGE',4000);\/\/上传图片的最大大小(KB)，支持小数$/;"	d
+MAILTYPE	config.php	/^	define("MAILTYPE","HTML");\/\/邮件格式（HTML\/TXT）,TXT为文本邮件$/;"	d
+MAXIMUM_EMAIL_PER_EMAIL	config.php	/^  define('MAXIMUM_EMAIL_PER_EMAIL', 3);$/;"	d
+MAXIMUM_EMAIL_PER_IP	config.php	/^  define('MAXIMUM_EMAIL_PER_IP', 8);$/;"	d
+MAXIMUM_REQUEST_PER_MIN	config.php	/^  define('MAXIMUM_REQUEST_PER_MIN', 200);\/\/ maximun request per minute per ip$/;"	d
+MAX_IMG_ALLOWED	config.php	/^	define('MAX_IMG_ALLOWED',5);\/\/单个商品最多允许上传的照片$/;"	d
+MysqlPDO	class-pdo.php	/^  public function MysqlPDO()$/;"	f
+MysqlPDO	class-pdo.php	/^class MysqlPDO$/;"	c
+Reg	functions-account.php	/^	function Reg($username, $email, $pwd)	{$/;"	f
+SESSION_TIME_OUT	config.php	/^  define('SESSION_TIME_OUT', 300000);\/\/ 5 minutes 5*60*1000=300,000$/;"	d
+SITE	config.php	/^	define('SITE','localhost\/jluewu');\/\/网站地址$/;"	d
+SMTPPASS	config.php	/^	define("SMTPPASS","JLUewu6666");\/\/SMTP服务器的用户密码   jidayiwu  PInTgtgoR5i9  sina && 163$/;"	d
+SMTPSERVER	config.php	/^	define("SMTPSERVER","smtp.mxhichina.com");\/\/SMTP服务器$/;"	d
+SMTPSERVERPORT	config.php	/^	define("SMTPSERVERPORT",25);\/\/SMTP服务器端口$/;"	d
+SMTPUSER	config.php	/^	define("SMTPUSER","support@jluewu.com");\/\/SMTP服务器的用户帐号$/;"	d
+SMTPUSERMAIL	config.php	/^	define("SMTPUSERMAIL","support@jluewu.com");\/\/SMTP服务器的用户邮箱$/;"	d
+Smtp	class-smtp.php	/^		function Smtp($relay_host = "", $smtp_port = 25,$auth = false,$user,$pass)$/;"	f
+Smtp	class-smtp.php	/^	class Smtp$/;"	c
+TO	class-smtp.php	/^				$TO = array_merge($TO, explode(",", $this->strip_comment($bcc)));$/;"	v
+TO	class-smtp.php	/^				$TO = array_merge($TO, explode(",", $this->strip_comment($cc)));$/;"	v
+TO	class-smtp.php	/^			$TO = explode(",", $this->strip_comment($to));$/;"	v
+TYPE_LIST	config.php	/^  define('TYPE_LIST', $type_array);$/;"	d
+UPLOADED_FILE_FOLDER	config.php	/^  define('UPLOADED_FILE_FOLDER', 'images\/');$/;"	d
+_SESSION	functions-account.php	/^		$_SESSION=array();$/;"	v
+_SESSION	secure.php	/^        $_SESSION = array();$/;"	v
+a_dest	functions-email.php	/^    $a_dest = array($username, $auth_key);$/;"	v
+a_origin	functions-email.php	/^    $a_origin = array('<%username%>', '<%auth_key%>');$/;"	v
+a_params	functions-account.php	/^		$a_params = array($account, $accepted, $time, $ip);$/;"	v
+a_params	functions-account.php	/^		$a_params = array($email, $gender, $student_no, $campus, $qq, $phone, $hide_phone, $username);$/;"	v
+a_params	functions-account.php	/^		$a_params = array($profile['username'], $profile['email']);$/;"	v
+a_params	functions-account.php	/^    $a_params = array($new_auth_key, $new_pwd, $new_salt, $username);$/;"	v
+a_params	functions-comment.php	/^		$a_params = array($pid, $from, $to, $content, $time);$/;"	v
+a_params	functions-feedback.php	/^		$a_params = array($title, $content, $name, $contact, $time, $ip);$/;"	v
+a_params	functions-msg.php	/^		$a_params = array($from, $to, $url, $content, $time);$/;"	v
+a_params	functions-product.php	/^		$a_params = array($name, $category, $campus, $type, $price, $depreciation, $description, $owner, $images, time());$/;"	v
+a_params	functions-product.php	/^		$a_params = array($name, $category, $campus, $type, $price, $depreciation, $description, $time, $pid, $owner);$/;"	v
+a_profile	functions-account.php	/^		$a_profile = (new MysqlPDO())->executeQuery($sql, array($email));$/;"	v
+a_profile	functions-account.php	/^		$a_profile = (new MysqlPDO())->executeQuery($sql, array($username));$/;"	v
+a_res	functions-account.php	/^		$a_res=(new MysqlPDO())->executeQuery($sql, array($username));$/;"	v
+a_res	functions-account.php	/^    $a_res=(new MysqlPDO())->executeQuery($sql, array($email));$/;"	v
+action	service-account.php	/^		$action = $_GET['action'];$/;"	v
+action	service-account.php	/^	$action = '';$/;"	v
+action	service-comment.php	/^		$action = $_GET['action'];$/;"	v
+action	service-comment.php	/^	$action = '';$/;"	v
+action	service-feedback.php	/^		$action = $_GET['action'];$/;"	v
+action	service-feedback.php	/^	$action = '';$/;"	v
+action	service-msg.php	/^		$action = $_GET['action'];$/;"	v
+action	service-msg.php	/^	$action = '';$/;"	v
+action	service-product.php	/^		$action = $_GET['action'];$/;"	v
+action	service-product.php	/^	$action = '';$/;"	v
+add_signin_log	functions-account.php	/^	function add_signin_log($account, $accepted, $time, $ip)$/;"	f
+address	class-smtp.php	/^				$address = preg_replace($comment, "", $address);$/;"	v
+address	class-smtp.php	/^			$address = preg_replace("\/([ \\t\\r\\n])+\/", "", $address);$/;"	v
+address	class-smtp.php	/^			$address = preg_replace("\/^.*<(.+)>.*$\/", "\\1", $address);$/;"	v
+affected_rows	class-pdo.php	/^    $affected_rows = $stmt->rowCount();$/;"	v
+area_array	config.php	/^	$area_array = array('南区','南岭','南湖','和平','朝阳','新民');$/;"	v
+area_array	config.php	/^  $area_array = json_encode($area_array);$/;"	v
+area_array	goods_detail.php	/^	$area_array = json_decode(AREA_LIST);$/;"	v
+area_array	goods_list.php	/^	$area_array = json_decode(AREA_LIST);$/;"	v
+area_array	goods_modify.php	/^	                      $area_array=json_decode(AREA_LIST);$/;"	v
+area_array	index.php	/^  $area_array = json_decode(AREA_LIST);$/;"	v
+area_array	ucenter.php	/^	                $area_array = json_decode(AREA_LIST);$/;"	v
+arg	class-smtp.php	/^		function smtp_putcmd($cmd, $arg = "")$/;"	v
+auth	class-smtp.php	/^			$this->auth = $auth;\/\/auth$/;"	v
+auth	class-smtp.php	/^		var $auth;$/;"	v
+auth_key	functions-account.php	/^		$auth_key = process_auth_key($profile['auth_key'], $profile['last_time']);$/;"	v
+auth_key	functions-account.php	/^	$auth_key = hash('sha256', $url.$auth_key);$/;"	v
+auth_key	functions-account.php	/^	$auth_key = md5($auth_key);$/;"	v
+auth_key	functions-account.php	/^	$auth_key = md5($auth_key.$last_time);$/;"	v
+auth_key	functions-account.php	/^	$auth_key = md5($today.$auth_key);$/;"	v
+auth_key	functions-account.php	/^    $auth_key = rand_string(32);$/;"	v
+body	class-smtp.php	/^			$body = preg_replace("\/(^|(\\r\\n))(\\.)\/", "\\1.\\3", $body);$/;"	v
+body	class-smtp.php	/^		function smtp_send($helo, $from, $to, $header, $body = "")$/;"	v
+campus	goods_detail.php	/^			$campus = $detail['campus'];$/;"	v
+campus	goods_list.php	/^		$campus = $_GET['campus'];$/;"	v
+campus	goods_modify.php	/^				$campus = $good['campus'];$/;"	v
+campus	goods_publish.php	/^					$campus = $profile['campus'];$/;"	v
+campus	goods_publish.php	/^			$campus = 0;$/;"	v
+campus_array	functions-product.php	/^		$campus_array = json_decode(AREA_LIST);$/;"	v
+campus_array	goods_publish.php	/^	$campus_array = json_decode(AREA_LIST);$/;"	v
+campus_array	sidebar.php	/^              $campus_array = json_decode(AREA_LIST);$/;"	v
+can_send_to	functions-email.php	/^  function can_send_to($email, $ip, $instant_deliver){$/;"	f
+category	goods_detail.php	/^			$category = $detail['category'];$/;"	v
+category	goods_list.php	/^		$category = $_GET['c'];$/;"	v
+category	goods_modify.php	/^				$category = $good['category'];$/;"	v
+category_array	config.php	/^	$category_array = array('代步','数码','电器','文体','服饰','书刊','鞋履','装饰','虚拟','日用','食品','其他');$/;"	v
+category_array	config.php	/^  $category_array = json_encode($category_array);$/;"	v
+category_array	functions-product.php	/^		$category_array = json_decode(CATEGORY_LIST);$/;"	v
+category_array	goods_detail.php	/^	$category_array = json_decode(CATEGORY_LIST);$/;"	v
+category_array	goods_list.php	/^	$category_array = json_decode(CATEGORY_LIST);$/;"	v
+category_array	goods_modify.php	/^	                      $category_array=json_decode(CATEGORY_LIST);$/;"	v
+category_array	goods_publish.php	/^	$category_array = json_decode(CATEGORY_LIST);$/;"	v
+category_array	index.php	/^	$category_array = json_decode(CATEGORY_LIST);$/;"	v
+chkEmail	js/account.js	/^  function chkEmail(email){$/;"	f
+chkPhoneNumber	js/account.js	/^  function chkPhoneNumber(phoneNumber){$/;"	f
+chkQQ	js/account.js	/^  function chkQQ(qq){$/;"	f
+chkUsername	js/account.js	/^  function chkUsername(username){$/;"	f
+cip	functions-account.php	/^		  $cip = $_SERVER['HTTP_CLIENT_IP'];$/;"	v
+cip	functions-account.php	/^		  $cip = $_SERVER['HTTP_X_FORWARDED_FOR'];$/;"	v
+cip	functions-account.php	/^		  $cip = $_SERVER['REMOTE_ADDR'];$/;"	v
+cip	functions-account.php	/^		  $cip = '0.0.0.0';$/;"	v
+cip	functions-feedback.php	/^		  $cip = $_SERVER['HTTP_CLIENT_IP'];$/;"	v
+cip	functions-feedback.php	/^		  $cip = $_SERVER['HTTP_X_FORWARDED_FOR'];$/;"	v
+cip	functions-feedback.php	/^		  $cip = $_SERVER['REMOTE_ADDR'];$/;"	v
+cip	functions-feedback.php	/^		  $cip = 'unknown';$/;"	v
+cmd	class-smtp.php	/^				else $cmd = $cmd." ".$arg;$/;"	v
+cmd	class-smtp.php	/^				if($cmd=="") $cmd = $arg;$/;"	v
+cnt	functions-account.php	/^		$cnt = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+cnt	functions-account.php	/^		$cnt = (new MysqlPDO())->execute($sql, $params);$/;"	v
+cnt	functions-email.php	/^    $cnt = (new MysqlPDO())->execute($sql, $params);$/;"	v
+cnt	functions-email.php	/^    $cnt = count($result);$/;"	v
+cnt	ucenter.php	/^                  $cnt = count($logs);$/;"	v
+colors	header.php	/^	 $colors=array("#ffa86e","#f3c717","#abdd15","#61e261","#61c2e2","#6197e2","#b761e2","#e964b2","#ff6e6e","#ff9999","#ffa86e","#f3c717");$/;"	v
+comment	class-smtp.php	/^			$comment = "\/\\([^()]*\\)\/";$/;"	v
+comment_to	js/goods.js	/^function comment_to(to){$/;"	f
+comments	goods_detail.php	/^		    $comments = get_all_comment_by_pid($pid);$/;"	v
+connect	class-pdo.php	/^  private function connect()$/;"	f
+contact	functions-feedback.php	/^		$contact = mb_substr($contact, 0, 45, 'utf-8');$/;"	v
+content	functions-email.php	/^      $content = str_replace($a_origin[$i], $a_dest[$i], $content);$/;"	v
+content	functions-email.php	/^    $content =  file_get_contents($template);$/;"	v
+content	functions-feedback.php	/^		$content = mb_substr($content, 0, 500, 'utf-8');$/;"	v
+content	service-msg.php	/^				$content=$_POST['content'];$/;"	v
+count	functions-account.php	/^		$count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-account.php	/^		$count = (new MysqlPDO())->execute($sql, $params);$/;"	v
+count	functions-account.php	/^    $count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-account.php	/^    $count = (new MysqlPDO())->execute($sql, $params);$/;"	v
+count	functions-comment.php	/^		$count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-feedback.php	/^		$count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-msg.php	/^		$count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-msg.php	/^		$count = (new MysqlPDO())->execute($sql, array($mid, $username));$/;"	v
+count	functions-product.php	/^		$count = (new MysqlPDO())->execute($sql, $a_params);$/;"	v
+count	functions-product.php	/^		$count = (new MysqlPDO())->execute($sql, array($pid, $owner));$/;"	v
+cryptPwd	js/account.js	/^  function cryptPwd(password){$/;"	f
+crypt_pwd	functions-account.php	/^function crypt_pwd($pwd , $salt)$/;"	f
+crypt_pwd_client	functions-account.php	/^function crypt_pwd_client($pwd)$/;"	f
+dbh	class-pdo.php	/^      $this->dbh = new PDO('mysql:host='.DB_HOST.';charset=utf8;port='.DB_PORT.';dbname='.DB_NAME, DB_USER, DB_PASSWORD);$/;"	v
+dbh	class-pdo.php	/^      $this->dbh = null;$/;"	v
+dbh	class-pdo.php	/^    $this->dbh = null;$/;"	v
+dbh	class-pdo.php	/^  private $dbh;$/;"	v
+debug	class-smtp.php	/^			$this->debug = FALSE;$/;"	v
+debug	class-smtp.php	/^		var $debug;$/;"	v
+delete_msg_by_mid	functions-msg.php	/^	function delete_msg_by_mid($mid,$username)$/;"	f
+delete_products_by_pid	functions-product.php	/^	function delete_products_by_pid($owner, $pid)$/;"	f
+depreciation	goods_detail.php	/^			$depreciation = (10-$detail['depreciation']).'&nbsp;成新';$/;"	v
+depreciation	goods_modify.php	/^				$depreciation = $good['depreciation'];$/;"	v
+desc	goods_list.php	/^		$desc = false;$/;"	v
+desc	goods_list.php	/^		$desc = true;$/;"	v
+description	functions-product.php	/^		$description=mb_substr($description, 0, 500, 'utf-8');$/;"	v
+description	goods_detail.php	/^			$description = str_replace(array("\\r\\n", "\\r", "\\n"), '<br\/>', htmlspecialchars($detail['description']));$/;"	v
+description	goods_modify.php	/^				$description = htmlspecialchars($good['description']);$/;"	v
+dest	functions-account.php	/^	$dest = hash('sha256', $dest);$/;"	v
+dest	functions-account.php	/^	$dest = hash('sha256', $dest.$salt);$/;"	v
+dest	functions-account.php	/^	$dest = hash('sha256', $pwd.$salt);$/;"	v
+dest	functions-account.php	/^	$dest = substr($dest, 5, 45);$/;"	v
+detail	goods_detail.php	/^		$detail = get_product_by_pid($pid);$/;"	v
+dictionary	functions-account.php	/^	$dictionary='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+-*\/?!%`~#^&(){}';$/;"	v
+domain	class-smtp.php	/^			$domain = preg_replace("\/^.+@([^@]+)$\/", "\\1", $address);$/;"	v
+dst_bg_color	functions-image.php	/^		$dst_bg_color=imagecolorallocate($dst_img,254,254,254);$/;"	v
+dst_height	functions-image.php	/^		$dst_height=floor($src_height * $scale);$/;"	v
+dst_img	functions-image.php	/^		$dst_img = imagecreatetruecolor($dst_max_width, $dst_max_height);$/;"	v
+dst_img_addr	functions-image.php	/^		$dst_img_addr=pathinfo($src_img,PATHINFO_DIRNAME).'\/'.$prefix.pathinfo($src_img, PATHINFO_BASENAME);$/;"	v
+dst_max_height	functions-image.php	/^ * @param int $dst_max_height=80$/;"	v
+dst_max_width	functions-image.php	/^ * @param int $dst_max_width=100$/;"	v
+dst_max_width	functions-image.php	/^function image_scale($src_img, $dst_max_width=500, $dst_max_height=400, $prefix='s_'){$/;"	v
+dst_width	functions-image.php	/^		$dst_width=floor($src_width * $scale);$/;"	v
+email	functions-account.php	/^		if($profile['email_verified'] =='y'){ $email = $profile['email']; }$/;"	v
+email	service-account.php	/^				$email = $_GET['email'];$/;"	v
+errno	functions-email.php	/^    $errno = can_send_to($email, $ip);$/;"	v
+execute	class-pdo.php	/^  public function execute($sql, $a_params)$/;"	f
+executeQuery	class-pdo.php	/^  function executeQuery($sql, $a_params)$/;"	f
+file	service-account.php	/^		die('main function file not exist !');$/;"	f
+forget_password	functions-account.php	/^	function forget_password($username, $email)$/;"	f
+from	service-comment.php	/^					$from=$_SESSION['ewu_username'];$/;"	v
+gender	functions-account.php	/^		if($gender == 1){	$gender = 'm';$/;"	v
+gender	functions-account.php	/^		}else if($gender==2){	$gender = 'f';$/;"	v
+gender	functions-account.php	/^		}else if($gender==3){	$gender = 'u';$/;"	v
+gender	goods_detail.php	/^			case 'f': $gender = '美女'; break;$/;"	v
+gender	goods_detail.php	/^			case 'm': $gender = '帅哥'; break;$/;"	v
+gender	goods_detail.php	/^			default:  $gender = '保密'; break;$/;"	v
+gender	goods_detail.php	/^		$gender = $profile['gender'];$/;"	v
+gender	goods_detail.php	/^		$gender = '未知';$/;"	v
+get_address	class-smtp.php	/^		function get_address($address)$/;"	f
+get_all_comment_by_pid	functions-comment.php	/^	function get_all_comment_by_pid($pid){$/;"	f
+get_all_comment_by_pid_total	functions-comment.php	/^	function get_all_comment_by_pid_total($pid){$/;"	f
+get_all_feedback	functions-feedback.php	/^	function get_all_feedback(){$/;"	f
+get_all_feedback_total	functions-feedback.php	/^	function get_all_feedback_total()$/;"	f
+get_all_msg_by_username	functions-msg.php	/^	function get_all_msg_by_username($to)$/;"	f
+get_all_msg_by_username_total	functions-msg.php	/^	function get_all_msg_by_username_total($to){$/;"	f
+get_all_products	functions-product.php	/^	function get_all_products($page, $pagesize,$is_order_by_price, $desc){$/;"	f
+get_all_products_total	functions-product.php	/^	function get_all_products_total(){$/;"	f
+get_ip	functions-account.php	/^	function get_ip(){$/;"	f
+get_ip	functions-feedback.php	/^	function get_ip(){$/;"	f
+get_product_by_pid	functions-product.php	/^	function get_product_by_pid($pid){$/;"	f
+get_signin_log	functions-account.php	/^	function get_signin_log( $username )$/;"	f
+get_unread_msg_by_username	functions-msg.php	/^	function get_unread_msg_by_username($to)$/;"	f
+get_unread_msg_by_username_total	functions-msg.php	/^	function get_unread_msg_by_username_total($to)$/;"	f
+get_user_information	functions-account.php	/^	function get_user_information($username)$/;"	f
+good	goods_modify.php	/^		$good = get_product_by_pid($pid);$/;"	v
+goods	goods_detail.php	/^	$goods = get_all_products(1, 2, false, true);$/;"	v
+goods	goods_list.php	/^		$goods = get_all_products($page, 12, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_after_time($page,$pagesize, $time, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_by_area($page, $pagesize, $campus, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_by_category($page,$pagesize, $category, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_by_name($page, $pagesize, $name, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_by_owner($page, $pagesize, $owner, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_by_type($page,$pagesize, $type, $is_order_by_price, $desc);$/;"	v
+goods	goods_list.php	/^		$goods = search_products_cheaper_than($page, $pagesize, $price, $is_order_by_price, $desc);$/;"	v
+goods	index.php	/^	$goods = search_products_by_area(1, 6, 1, false, true);$/;"	v
+goods	index.php	/^	$goods=get_all_products(1, 6, false, true);$/;"	v
+goods	index.php	/^	$goods=search_products_by_category(1, 6, 6, false, true);$/;"	v
+goods	ucenter.php	/^      $goods = search_products_by_owner(1, 100, $username, false, true);$/;"	v
+header	class-smtp.php	/^			$header = "MIME-Version:1.0\\r\\n";$/;"	v
+hide_phone	functions-account.php	/^		if($hide_phone != 'true'){ $hide_phone = 'n'; }else{ $hide_phone = 'y';	}$/;"	v
+host_name	class-smtp.php	/^			$this->host_name = "localhost"; \/\/is used in HELO command$/;"	v
+host_name	class-smtp.php	/^		var $host_name;$/;"	v
+i	functions-product.php	/^		$i = 0;$/;"	v
+i	header.php	/^	 foreach($category_array as $i => $cate)$/;"	v
+image_scale	functions-image.php	/^function image_scale($src_img, $dst_max_width=500, $dst_max_height=400, $prefix='s_'){$/;"	f
+images	functions-product.php	/^		$images = '';$/;"	v
+images	goods_detail.php	/^			$images = explode(';', $detail['images']);$/;"	v
+images	goods_detail.php	/^		          $images = explode(';', $good['images']);$/;"	v
+images	goods_list.php	/^                      $images=explode(';', $good['images']);$/;"	v
+images	goods_modify.php	/^				$images = explode(';', $good['images']);$/;"	v
+images	index.php	/^          $images = explode(';', $good['images']);$/;"	v
+images	index.php	/^          $images=explode(';', $good['images']);$/;"	v
+images	service-product.php	/^					$images='';$/;"	v
+img_allowed_list	functions-product.php	/^		$img_allowed_list = json_decode(IMG_ALLOWED_LIST);$/;"	v
+imgtype	config.php	/^  $imgtype = array('image\/png','image\/jpeg','gif');$/;"	v
+imgtype	config.php	/^  $imgtype = json_encode($imgtype);$/;"	v
+instant_deliver	functions-email.php	/^  function send_email($email, $subject, $template, $ip, $a_origin, $a_dest, $instant_deliver = true){$/;"	v
+ip	functions-account.php	/^		$ip = ip2long(get_ip());$/;"	v
+ip	functions-feedback.php	/^		$ip = ip2long(get_ip());$/;"	v
+is_email_reged	functions-account.php	/^	function is_email_reged($email)$/;"	f
+is_email_valid	functions-account.php	/^	function is_email_valid($email){$/;"	f
+is_name_reged	functions-account.php	/^	function is_name_reged($username)$/;"	f
+is_name_valid	functions-account.php	/^	function is_name_valid($username){$/;"	f
+is_order_by_price	goods_list.php	/^		$is_order_by_price = false;$/;"	v
+is_order_by_price	goods_list.php	/^		$is_order_by_price = true;$/;"	v
+key	goods_publish.php	/^													if(isset($_GET['buy']) && $key == 'w'){$/;"	v
+key	goods_publish.php	/^											  foreach($campus_array as $key=>$value){$/;"	v
+key	goods_publish.php	/^											  foreach($category_array as $key=>$value){$/;"	v
+key	goods_publish.php	/^											  foreach($type_array as $key => $value){$/;"	v
+key	sidebar.php	/^              foreach($campus_array as $key => $value){$/;"	v
+last_ip	functions-account.php	/^		$last_ip = ip2long(get_ip());$/;"	v
+last_time	functions-account.php	/^		$last_time = time();$/;"	v
+last_time	functions-account.php	/^function process_auth_key($auth_key, $last_time = 0, $url = 'www.jluewu.com')$/;"	v
+leave_a_comment	functions-comment.php	/^	function leave_a_comment($pid, $from, $to, $content){$/;"	f
+leave_a_feedback	functions-feedback.php	/^	function leave_a_feedback($title, $content, $name, $contact)$/;"	f
+leave_a_msg	functions-msg.php	/^	function leave_a_msg($from, $to, $url, $content)$/;"	f
+loadImage	js/goods.js	/^  function loadImage(context){$/;"	f
+log_file	class-smtp.php	/^			$this->log_file = "";$/;"	v
+log_file	class-smtp.php	/^		var $log_file;$/;"	v
+log_write	class-smtp.php	/^		function log_write($message)$/;"	f
+loginByEmail	functions-account.php	/^	function loginByEmail($email, $pwd, $remember_me = false)$/;"	f
+loginByName	functions-account.php	/^	function loginByName($username, $pwd, $remember_me = false)$/;"	f
+logs	ucenter.php	/^      $logs = get_signin_log($username) ;$/;"	v
+mail_from	class-smtp.php	/^			$mail_from = $this->get_address($this->strip_comment($from));$/;"	v
+maxpage	goods_list.php	/^		$maxpage = ceil($total \/ $pagesize);$/;"	v
+message	class-smtp.php	/^			$message = date("M d H:i:s ").get_current_user()."[".getmypid()."]: ".$message;$/;"	v
+msg	functions-account.php	/^		$msg = is_email_valid($email);$/;"	v
+msg	functions-account.php	/^	  $msg = is_name_valid($username);$/;"	v
+msgs	ucenter.php	/^      $msgs = get_unread_msg_by_username($username);$/;"	v
+name	functions-feedback.php	/^		$name = mb_substr($name, 0, 16, 'utf-8');$/;"	v
+name	functions-product.php	/^				$name=date('Ymdhis').rand(100,999).'.'.pathinfo($image['name'], PATHINFO_EXTENSION);$/;"	v
+name	functions-product.php	/^			$name = date('Ymdhis').rand(100,999).'.'.pathinfo($image['name'], PATHINFO_EXTENSION);$/;"	v
+name	goods_detail.php	/^			$name = htmlspecialchars($detail['name']);$/;"	v
+name	goods_list.php	/^		$name = $_GET['name'];$/;"	v
+name	goods_modify.php	/^				$name = $good['name'];$/;"	v
+new_auth_key	functions-account.php	/^		$new_auth_key=rand_string(32);$/;"	v
+new_auth_key	functions-account.php	/^    $new_auth_key = rand_string(32);$/;"	v
+new_pwd	functions-account.php	/^		$new_pwd=crypt_pwd($new_pwd, $new_salt);$/;"	v
+new_pwd	functions-account.php	/^    $new_pwd = crypt_pwd($new_pwd, $new_salt);$/;"	v
+new_salt	functions-account.php	/^		$new_salt = rand_string();$/;"	v
+new_salt	functions-account.php	/^    $new_salt = rand_string();$/;"	v
+order_by	goods_list.php	/^		$order_by = 'by=price&';$/;"	v
+order_by	goods_list.php	/^	$order_by = '';$/;"	v
+owner	goods_detail.php	/^		$owner = '(已被流放)';$/;"	v
+owner	goods_detail.php	/^		$owner = htmlspecialchars($profile['username']);$/;"	v
+owner	goods_list.php	/^		$owner = $_GET['owner'];$/;"	v
+owner	service-product.php	/^					$owner = $_SESSION['ewu_username'];$/;"	v
+owner	service-product.php	/^					$owner=mysql_real_escape_string($_SESSION['yiwu_username']);$/;"	v
+owner	service-product.php	/^		$owner=$_SESSION['ewu_username'];$/;"	v
+page	goods_list.php	/^			$page = $maxpage;$/;"	v
+page	goods_list.php	/^			$page = 1;$/;"	v
+page	goods_list.php	/^		$page = $_GET['page'];$/;"	v
+page	goods_list.php	/^		$page = 1;$/;"	v
+page_type	ucenter.php	/^    $page_type='changepwd';$/;"	v
+page_type	ucenter.php	/^    $page_type='goods';$/;"	v
+page_type	ucenter.php	/^    $page_type='logs';$/;"	v
+page_type	ucenter.php	/^    $page_type='msg';$/;"	v
+page_type	ucenter.php	/^    $page_type='profile';$/;"	v
+page_type	ucenter.php	/^    $page_type='signout';$/;"	v
+page_type	ucenter.php	/^    $page_type='verify';$/;"	v
+page_type	ucenter.php	/^  $page_type = 'home';$/;"	v
+pagesize	goods_list.php	/^	$pagesize = 12;$/;"	v
+params	functions-account.php	/^		$params = array($last_time, $last_ip, $email);$/;"	v
+params	functions-account.php	/^		$params = array($last_time, $last_ip, $username);$/;"	v
+params	functions-account.php	/^		$params = array($new_auth_key, $new_pwd, $new_salt, $username);$/;"	v
+params	functions-account.php	/^    $params = array($username, $email, $pwd, $auth_key, $salt, $time, $ip);$/;"	v
+params	functions-email.php	/^    $params = array($email, time(), $ip);$/;"	v
+pass	class-smtp.php	/^			$this->pass = $pass;$/;"	v
+pass	class-smtp.php	/^		var $pass;$/;"	v
+phone	functions-account.php	/^		if($profile['phone_verified'] =='y'){ $phone = $profile['phone']; }$/;"	v
+phone	goods_detail.php	/^		$phone = $profile['phone'];$/;"	v
+phone	goods_detail.php	/^		$phone = '';$/;"	v
+phone	goods_detail.php	/^		if(strlen($phone) !=11 ){ $phone = ''; }$/;"	v
+phone	goods_publish.php	/^					$phone = $profile['phone'];$/;"	v
+phone	goods_publish.php	/^		  $phone = '';$/;"	v
+pid	goods_detail.php	/^			$pid = 0;$/;"	v
+pid	goods_detail.php	/^			$pid=0;$/;"	v
+pid	goods_detail.php	/^		$pid = $_GET['id'];$/;"	v
+pid	goods_detail.php	/^		$pid=0;$/;"	v
+pid	goods_modify.php	/^			$pid = 0;$/;"	v
+pid	goods_modify.php	/^		$pid = $_GET['id'];$/;"	v
+pid	goods_modify.php	/^		$pid=0;$/;"	v
+pid	service-product.php	/^					$pid=$_POST['id'];$/;"	v
+pid	service-product.php	/^				$pid = $_GET['id'];$/;"	v
+prefix	functions-image.php	/^ * @param string $prefix='s_'$/;"	v
+prefix	goods_list.php	/^		$prefix = 'c='.$category.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'campus='.$campus.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'name='.$name.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'owner='.$owner.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'price='.$price.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'time='.$time.'&';$/;"	v
+prefix	goods_list.php	/^		$prefix = 'type='.$type.'&';$/;"	v
+prefix	goods_list.php	/^	$prefix = '';$/;"	v
+prefix	ucenter.php	/^  $prefix = '';$/;"	v
+price	goods_detail.php	/^			$price = $detail['price']\/100;$/;"	v
+price	goods_list.php	/^		$price = $_GET['price'];$/;"	v
+price	goods_modify.php	/^				$price = $good['price'] \/ 100;$/;"	v
+process_auth_key	functions-account.php	/^function process_auth_key($auth_key, $last_time = 0, $url = 'www.jluewu.com')$/;"	f
+profile	functions-account.php	/^		$profile = get_user_information($username);$/;"	v
+profile	functions-account.php	/^    $profile = get_user_information($username);$/;"	v
+profile	goods_detail.php	/^	$profile = get_user_information($detail['owner']);$/;"	v
+profile	goods_publish.php	/^		    $profile = get_user_information($_SESSION['ewu_username']);$/;"	v
+profile	ucenter.php	/^      $profile = get_user_information($username);$/;"	v
+publish	functions-product.php	/^	function publish($name, $category, $campus, $type, $price, $depreciation, $description, $owner){$/;"	f
+pwd	functions-account.php	/^	$pwd = hash('sha256', $pwd);$/;"	v
+pwd	functions-account.php	/^	$pwd = hash('sha256', $this_month.$pwd);$/;"	v
+pwd	functions-account.php	/^	$pwd = substr($pwd, 10, 42);$/;"	v
+pwd	functions-account.php	/^    $pwd=crypt_pwd($pwd, $salt);$/;"	v
+qq	goods_detail.php	/^		$qq = $profile['qq'];$/;"	v
+qq	goods_detail.php	/^		$qq = '';$/;"	v
+qq	goods_detail.php	/^		if(strlen($qq)<5){ $qq = ''; }$/;"	v
+rand_string	functions-account.php	/^function rand_string($length = 64)$/;"	f
+rcpt_to	class-smtp.php	/^				$rcpt_to = $this->get_address($rcpt_to);$/;"	v
+read	functions-msg.php	/^	function read($mid, $username)$/;"	f
+read	js/others.js	/^function read(mid,url){$/;"	f
+readMsg	js/others.js	/^function readMsg(callback,mid){$/;"	f
+relay_host	class-smtp.php	/^			$this->relay_host = $relay_host;$/;"	v
+relay_host	class-smtp.php	/^		var $relay_host;$/;"	v
+remember_me	functions-account.php	/^	function loginByEmail($email, $pwd, $remember_me = false)$/;"	v
+remember_me	functions-account.php	/^	function loginByName($username, $pwd, $remember_me = false)$/;"	v
+removeImage	js/goods.js	/^  function removeImage(context){$/;"	f
+reset_pwd	functions-account.php	/^	function reset_pwd($username, $auth_key, $new_pwd)$/;"	f
+response	class-smtp.php	/^			$response = str_replace("\\r\\n", "", fgets($this->sock, 512));$/;"	v
+result	class-pdo.php	/^      $result = $stmt->fetchAll();$/;"	v
+result	class-pdo.php	/^    $result = null;$/;"	v
+result	functions-account.php	/^		$result = (new MysqlPDO())->executeQuery($sql, $a_params);$/;"	v
+result	functions-comment.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($pid));$/;"	v
+result	functions-comment.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($pid));$/;"	v
+result	functions-email.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($email, mktime(0,0,0)));$/;"	v
+result	functions-email.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($ip, mktime(0,0,0)));$/;"	v
+result	functions-feedback.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array());$/;"	v
+result	functions-msg.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($to));$/;"	v
+result	functions-msg.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($to));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($campus));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($campus));;$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($category));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($category));;$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($owner));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($pid));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($price));;$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array($time));;$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array('%'.$name.'%'));$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array('%'.$name.'%'));;$/;"	v
+result	functions-product.php	/^		$result = (new MysqlPDO())->executeQuery($sql, array());$/;"	v
+result	functions-product.php	/^		$result=(new MysqlPDO())->executeQuery($sql, array($type));;$/;"	v
+result	functions-product.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($price));$/;"	v
+result	functions-product.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($time));$/;"	v
+result	functions-product.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array($type));$/;"	v
+result	functions-product.php	/^    $result = (new MysqlPDO())->executeQuery($sql, array());$/;"	v
+salt	functions-account.php	/^		$salt = rand_string();$/;"	v
+salt	functions-account.php	/^	$salt = hash('sha256', $salt);$/;"	v
+scale	functions-image.php	/^			$scale=$dst_max_height \/ $src_height;$/;"	v
+scale	functions-image.php	/^			$scale=$dst_max_width \/ $src_width;$/;"	v
+scale	functions-image.php	/^		$scale=1;$/;"	v
+search_products_after_time	functions-product.php	/^	function search_products_after_time($page, $pagesize, $time, $is_order_by_price, $desc)$/;"	f
+search_products_after_time_total	functions-product.php	/^	function search_products_after_time_total($time){$/;"	f
+search_products_by_area	functions-product.php	/^	function search_products_by_area($page, $pagesize, $campus, $is_order_by_price, $desc)$/;"	f
+search_products_by_area_total	functions-product.php	/^	function search_products_by_area_total($campus){$/;"	f
+search_products_by_category	functions-product.php	/^	function search_products_by_category($page, $pagesize, $category, $is_order_by_price, $desc)$/;"	f
+search_products_by_category_total	functions-product.php	/^	function search_products_by_category_total($category)$/;"	f
+search_products_by_name	functions-product.php	/^	function search_products_by_name($page, $pagesize, $name, $is_order_by_price, $desc){$/;"	f
+search_products_by_name_total	functions-product.php	/^	function search_products_by_name_total($name){$/;"	f
+search_products_by_owner	functions-product.php	/^	function search_products_by_owner($page, $pagesize, $owner, $is_order_by_price, $desc){$/;"	f
+search_products_by_owner_total	functions-product.php	/^	function search_products_by_owner_total($owner){$/;"	f
+search_products_by_type	functions-product.php	/^	function search_products_by_type($page, $pagesize, $type, $is_order_by_price, $desc)$/;"	f
+search_products_by_type_total	functions-product.php	/^	function search_products_by_type_total($type){$/;"	f
+search_products_cheaper_than	functions-product.php	/^	function search_products_cheaper_than($page, $pagesize, $price, $is_order_by_price, $desc){$/;"	f
+search_products_cheaper_than_total	functions-product.php	/^	function search_products_cheaper_than_total($price){$/;"	f
+send_email	functions-email.php	/^  function send_email($email, $subject, $template, $ip, $a_origin, $a_dest, $instant_deliver = true){$/;"	f
+send_forget_pass_mail	functions-email.php	/^  function send_forget_pass_mail($username, $email, $ip, $auth_key){$/;"	f
+send_undelivered_mail	functions-email.php	/^  function send_undelivered_mail(){$/;"	f
+send_verify_mail	functions-email.php	/^  function send_verify_mail($username, $email, $ip, $auth_key){$/;"	f
+send_welcome_mail	functions-email.php	/^  function send_welcome_mail($username, $email, $ip, $auth_key){$/;"	f
+sendmail	class-smtp.php	/^		function sendmail($to, $from, $subject = "", $body = "", $mailtype, $cc = "", $bcc = "", $additional_headers = "")$/;"	f
+sent	class-smtp.php	/^					$sent = FALSE;$/;"	v
+sent	class-smtp.php	/^			$sent = TRUE;$/;"	v
+shotCnt	js/goods.js	/^var shotCnt = 1;$/;"	v
+signout	functions-account.php	/^	function signout(){$/;"	f
+smtp	functions-email.php	/^    $smtp = new Smtp(SMTPSERVER,SMTPSERVERPORT,true,SMTPUSER,SMTPPASS);\/\/这里面的一个true是表示使用身份验证,否则不使用身份验证.$/;"	v
+smtp_debug	class-smtp.php	/^		function smtp_debug($message)$/;"	f
+smtp_eom	class-smtp.php	/^		function smtp_eom()$/;"	f
+smtp_error	class-smtp.php	/^		function smtp_error($string)$/;"	f
+smtp_message	class-smtp.php	/^		function smtp_message($header, $body)$/;"	f
+smtp_ok	class-smtp.php	/^		function smtp_ok()$/;"	f
+smtp_port	class-smtp.php	/^			$this->smtp_port = $smtp_port;$/;"	v
+smtp_port	class-smtp.php	/^		function Smtp($relay_host = "", $smtp_port = 25,$auth = false,$user,$pass)$/;"	v
+smtp_port	class-smtp.php	/^		var $smtp_port;$/;"	v
+smtp_putcmd	class-smtp.php	/^		function smtp_putcmd($cmd, $arg = "")$/;"	f
+smtp_send	class-smtp.php	/^		function smtp_send($helo, $from, $to, $header, $body = "")$/;"	f
+smtp_sockopen	class-smtp.php	/^		function smtp_sockopen($address)$/;"	f
+smtp_sockopen_mx	class-smtp.php	/^		function smtp_sockopen_mx($address)$/;"	f
+smtp_sockopen_relay	class-smtp.php	/^		function smtp_sockopen_relay()$/;"	f
+smtpemailto	functions-email.php	/^    $smtpemailto = $email; \/\/send to whom$/;"	v
+sock	class-smtp.php	/^				$this->sock = @fsockopen($host, $this->smtp_port, $errno, $errstr, $this->time_out);$/;"	v
+sock	class-smtp.php	/^			$this->sock = @fsockopen($this->relay_host, $this->smtp_port, $errno, $errstr, $this->time_out);$/;"	v
+sock	class-smtp.php	/^			$this->sock = FALSE;$/;"	v
+sock	class-smtp.php	/^		var $sock;$/;"	v
+sql	functions-account.php	/^		$sql = "UPDATE `ewu_account` SET `email` = ?, `gender` = ?, `student_no` = ?,`campus` = ?, `qq` = ?, `phone` = ?, `hide_phone` = ? WHERE `username` = ? LIMIT 1";$/;"	v
+sql	functions-account.php	/^		$sql = 'INSERT INTO `ewu_signin_log`(`account`, `accepted`, `time`, `ip`) VALUES(?, ?, ?, ?)';$/;"	v
+sql	functions-account.php	/^		$sql = 'SELECT * FROM `ewu_signin_log` WHERE `account` = ? OR `account` = ? ORDER BY `log_id` DESC LIMIT 20';$/;"	v
+sql	functions-account.php	/^		$sql = 'SELECT `username`, `pwd`, `salt`, `verified` FROM `ewu_account` WHERE `email` = ? LIMIT 1';$/;"	v
+sql	functions-account.php	/^		$sql = 'UPDATE `ewu_account` SET `last_time`= ?, `last_ip`=? WHERE username=? LIMIT 1';$/;"	v
+sql	functions-account.php	/^		$sql='SELECT * FROM `ewu_account` WHERE `username` = ? LIMIT 1';$/;"	v
+sql	functions-account.php	/^		$sql='SELECT 1 FROM `ewu_account` WHERE username = ? LIMIT 1';$/;"	v
+sql	functions-account.php	/^		$sql='UPDATE `ewu_account` SET `auth_key`= ?, `pwd`=?, `salt`=? WHERE username= ? LIMIT 1';$/;"	v
+sql	functions-account.php	/^		$sql='UPDATE `ewu_account` SET `last_time`= ?, `last_ip`=? WHERE email=? LIMIT 1';$/;"	v
+sql	functions-account.php	/^ 		$sql='SELECT 1 FROM `ewu_account` WHERE email = ? LIMIT 1';$/;"	v
+sql	functions-account.php	/^    $sql = 'INSERT INTO `ewu_account`(`username`, `email`, `pwd`, `auth_key`, `salt`, `reg_time`, `reg_ip`) VALUES ( ?, ?, ?, ?, ?, ?, ?)';$/;"	v
+sql	functions-account.php	/^    $sql='UPDATE `ewu_account` SET `auth_key`= ?, `pwd`=?, `salt`=? WHERE username= ? LIMIT 1';$/;"	v
+sql	functions-comment.php	/^		$sql = 'SELECT 1 FROM `ewu_comment` WHERE pid = ?';$/;"	v
+sql	functions-comment.php	/^		$sql ='SELECT * from `ewu_comment` WHERE pid = ? ORDER BY `cid`';$/;"	v
+sql	functions-comment.php	/^		$sql='INSERT INTO `ewu_comment`(`pid`, `from`, `to`,`content`,`time`) VALUES (?, ?, ?, ?, ?)';$/;"	v
+sql	functions-email.php	/^    $sql = 'INSERT INTO `ewu_email_log`(`email`, `time`, `ip`) VALUES(?, ?, ?) ';$/;"	v
+sql	functions-email.php	/^    $sql = 'SELECT 1 FROM `ewu_email_log` WHERE `email` = ? AND `time` >= ? ';$/;"	v
+sql	functions-email.php	/^    $sql = 'SELECT 1 FROM `ewu_email_log` WHERE `ip` = ? AND `time` >= ? ';$/;"	v
+sql	functions-feedback.php	/^		$sql = 'SELECT 1 FROM `ewu_feedback` ';$/;"	v
+sql	functions-feedback.php	/^		$sql ='SELECT * from `ewu_feedback` ORDER BY `fid` DESC';$/;"	v
+sql	functions-feedback.php	/^		$sql='INSERT INTO `ewu_feedback`(`title`, `content`,`name`, `contact`,`time`,`ip`) VALUES (?, ?, ?, ?, ?, ?)';$/;"	v
+sql	functions-msg.php	/^		$sql = 'SELECT 1 FROM `ewu_msg` WHERE `to` = ? ';$/;"	v
+sql	functions-msg.php	/^		$sql = 'SELECT 1 FROM `ewu_msg` WHERE `to` = ? AND `state`="w" ';$/;"	v
+sql	functions-msg.php	/^		$sql ='SELECT * from `ewu_msg` WHERE `to` = ? ORDER BY mid DESC';$/;"	v
+sql	functions-msg.php	/^		$sql ='SELECT * from `ewu_msg` WHERE `to`= ? AND `state`="w" ORDER BY mid DESC';$/;"	v
+sql	functions-msg.php	/^		$sql ='UPDATE `ewu_msg` SET `state` = "r" WHERE `mid` = ? AND `to` = ? LIMIT 1';$/;"	v
+sql	functions-msg.php	/^		$sql ='UPDATE `yiwu_msg` SET state = "d" WHERE `mid` = ? AND `to` = ?';$/;"	v
+sql	functions-msg.php	/^		$sql='INSERT INTO `ewu_msg`(`from`, `to`, `url`, `content`, `time`)	VALUES (?, ?, ?, ?, ?)';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `campus` = ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `category` = ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `name` LIKE ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `owner` = ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `price` <= ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `time` >= ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s" AND `type` = ?';$/;"	v
+sql	functions-product.php	/^		$sql = 'SELECT 1 FROM `ewu_product` WHERE `state` = "s"';$/;"	v
+sql	functions-product.php	/^		$sql = 'UPDATE `ewu_product` SET state = "d" WHERE `pid` = ? AND `owner` = ?';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" ';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `campus` = ? ';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `category` = ? ';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `owner` = ?';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `price`<= ?';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `time`>= ?';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE `state` = "s" AND `type` = ? ';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT *	from `ewu_product` WHERE state = "s" AND name LIKE ? ';$/;"	v
+sql	functions-product.php	/^		$sql ='SELECT * from `ewu_product` WHERE pid= ? LIMIT 1';$/;"	v
+sql	functions-product.php	/^		$sql='INSERT INTO `ewu_product`(`name`, `category`, `campus`,`type`, `price`, `depreciation`, `description`, `owner`, `images`,`time`)$/;"	v
+sql	functions-product.php	/^		$sql='UPDATE `ewu_product` SET `name` = ?, `category` = ?, `campus` = ?, `type` = ?, `price` = ?, `depreciation` = ?, `description` = ?,	`time` = ? WHERE pid = ? AND `owner` = ?';$/;"	v
+src_height	functions-image.php	/^		$src_height=$src_img_info[1];$/;"	v
+src_img_im	functions-image.php	/^				$src_img_im = imagecreatefromgif($src_img);$/;"	v
+src_img_im	functions-image.php	/^				$src_img_im = imagecreatefromjpeg($src_img);$/;"	v
+src_img_im	functions-image.php	/^				$src_img_im = imagecreatefrompng($src_img);$/;"	v
+src_img_im	functions-image.php	/^		$src_img_im = null;$/;"	v
+src_img_info	functions-image.php	/^		$src_img_info=getimagesize($src_img);$/;"	v
+src_width	functions-image.php	/^		$src_width=$src_img_info[0];$/;"	v
+stmt	class-pdo.php	/^    $stmt = $this->dbh->prepare($sql);$/;"	v
+str	functions-account.php	/^	$str='';$/;"	v
+str	functions-product.php	/^			$str = upload_image($image);$/;"	v
+strip_comment	class-smtp.php	/^		function strip_comment($address)$/;"	f
+student_no	functions-account.php	/^		if($profile['verified'] =='y'){ $student_no = $profile['student_no']; }$/;"	v
+subject	class-smtp.php	/^		function sendmail($to, $from, $subject = "", $body = "", $mailtype, $cc = "", $bcc = "", $additional_headers = "")$/;"	v
+subject	functions-email.php	/^    $subject = $subject;\/\/subject$/;"	v
+this_month	functions-account.php	/^	$this_month = mktime(0, 0, 0, date('n'), 0);$/;"	v
+time	functions-account.php	/^		$time = time();$/;"	v
+time	functions-comment.php	/^		$time=time();$/;"	v
+time	functions-feedback.php	/^		$time = time();$/;"	v
+time	functions-msg.php	/^		$time=time();$/;"	v
+time	goods_detail.php	/^			$time = date('Y-m-d', $detail['time']);$/;"	v
+time	goods_list.php	/^		$time = $_GET['time'];$/;"	v
+time	goods_modify.php	/^				$time = date('Y-m-d', $good['time']);$/;"	v
+time_out	class-smtp.php	/^			$this->time_out = 30; \/\/is used in fsockopen()$/;"	v
+time_out	class-smtp.php	/^		var $time_out;$/;"	v
+title	functions-feedback.php	/^		$title = mb_substr($title, 0, 25, 'utf-8');$/;"	v
+title	goods_list.php	/^			$title = $price.'元以下的商品';$/;"	v
+title	goods_list.php	/^			$title = '免费捐赠专区';$/;"	v
+title	goods_list.php	/^		$title = $area_array[$campus];$/;"	v
+title	goods_list.php	/^		$title = $category_array[$category];$/;"	v
+title	goods_list.php	/^		$title = $name;$/;"	v
+title	goods_list.php	/^		$title = $owner.'的物品';$/;"	v
+title	goods_list.php	/^		$title = $type_array->$type;$/;"	v
+title	goods_list.php	/^		$title = '今日上传';$/;"	v
+title	goods_list.php	/^	$title = '所有商品';$/;"	v
+to	service-msg.php	/^				$to=$_POST['to'];$/;"	v
+today	functions-account.php	/^	$today = mktime(0, 0, 0);$/;"	v
+total	functions-comment.php	/^		$total=0;$/;"	v
+total	goods_list.php	/^		$total = get_all_products_total($page, $pagesize);$/;"	v
+total	goods_list.php	/^		$total = search_products_after_time_total($time);$/;"	v
+total	goods_list.php	/^		$total = search_products_by_area_total($campus);$/;"	v
+total	goods_list.php	/^		$total = search_products_by_category_total($category);$/;"	v
+total	goods_list.php	/^		$total = search_products_by_name_total($name);$/;"	v
+total	goods_list.php	/^		$total = search_products_by_owner_total($owner);$/;"	v
+total	goods_list.php	/^		$total = search_products_by_type_total($type);$/;"	v
+total	goods_list.php	/^		$total = search_products_cheaper_than_total($price);$/;"	v
+total_msg	header.php	/^         $total_msg=get_unread_msg_by_username_total($_SESSION['ewu_username']);$/;"	v
+type	goods_detail.php	/^			$type = $detail['type'];$/;"	v
+type	goods_list.php	/^		$type = $_GET['type'];$/;"	v
+type	goods_modify.php	/^				$type = $good['type'];$/;"	v
+type_array	config.php	/^	$type_array = array('b'=>'交换或出售', 'e'=>'交换', 's'=>'出售', 'w'=>'求购');$/;"	v
+type_array	config.php	/^  $type_array = json_encode($type_array);$/;"	v
+type_array	functions-product.php	/^		$type_array = json_decode(TYPE_LIST);$/;"	v
+type_array	goods_detail.php	/^	$type_array = json_decode(TYPE_LIST);$/;"	v
+type_array	goods_list.php	/^	$type_array = json_decode(TYPE_LIST);$/;"	v
+type_array	goods_publish.php	/^	$type_array = json_decode(TYPE_LIST);$/;"	v
+type_array	index.php	/^	$type_array = json_decode(TYPE_LIST);$/;"	v
+u_campus	goods_detail.php	/^		$u_campus = $area_array[$profile['campus']];$/;"	v
+u_campus	goods_detail.php	/^		$u_campus = '未知';$/;"	v
+update_by_pid	functions-product.php	/^	function update_by_pid($pid, $name, $category, $campus, $type, $price, $depreciation, $description, $owner)$/;"	f
+update_info	functions-account.php	/^	function update_info($username,$email, $gender, $student_no, $campus, $qq, $phone, $hide_phone)$/;"	f
+update_pwd	functions-account.php	/^	function update_pwd($username, $old_pwd, $new_pwd)$/;"	f
+upload_image	functions-product.php	/^	function upload_image($image){$/;"	f
+url	functions-comment.php	/^			$url='goods_detail.php?id='.$pid;$/;"	v
+url	service-msg.php	/^				$url='';$/;"	v
+user	class-smtp.php	/^			$this->user = $user;$/;"	v
+user	class-smtp.php	/^		var $user;$/;"	v
+username	service-account.php	/^				$username = $_GET['username'];$/;"	v
+username	service-msg.php	/^		$username = $_SESSION['ewu_username'];$/;"	v
+username	service-product.php	/^				$username = $_SESSION['ewu_username'];$/;"	v
+username	ucenter.php	/^  $username = $_SESSION['ewu_username'];$/;"	v
